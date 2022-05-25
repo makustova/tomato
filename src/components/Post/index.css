@@ -1,0 +1,29 @@
+h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.post-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+.text-wrapper {
+  margin-left: 10px;
+}
+
+.delete-button {
+  height: 20px;
+}
+
+.platform-link {
+  display: block;
+  margin-top: 10px;
+}

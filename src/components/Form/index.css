@@ -1,0 +1,41 @@
+
+.form-wrapper {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.description-field, .field {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.description-field {
+  height: 150px;
+}
+
+.field {
+  height: 30px;
+}
+
+.create-post-button {
+  font-size: 15px;
+}
+
+.highlight-checkbox-caption {
+  font-size: 15px;
+  margin-left: 10px;
+  vertical-align: top;
+  user-select: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  vertical-align: top;
+}

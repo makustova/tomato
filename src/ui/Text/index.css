@@ -1,0 +1,27 @@
+.UI-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+.UI-text_size-s {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.UI-text_size-m {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.UI-text_size-l {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.UI-text_size-xxl {
+  font-size: 100px;
+  line-height: 110px;
+}
+
+.UI-text_bold {
+  font-weight: bold;
+}
