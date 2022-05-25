@@ -19,7 +19,28 @@ class Form extends React.Component {
   }
 
   handleSubmit = () => {
-    console.log(this.state);
+    this.props.onSubmit({
+      title: this.state.title,
+      description: this.state.description,
+      cover: this.state.cover,
+      links: {
+        apple: this.state.apple,
+        spotify: this.state.spotify,
+      },
+      highlighted: this.state.highlighted,
+    })
+    this.clearFields()
+  }
+
+  clearFields = () => {
+    this.setState({
+      title: '',
+      description: '',
+      cover: '',
+      apple: '',
+      spotify: '',
+      highlighted: false,
+    })
   }
 
   render() {

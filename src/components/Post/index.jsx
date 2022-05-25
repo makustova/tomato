@@ -9,8 +9,8 @@ const Post = ({post}) => {
         <h3>{post.title}</h3>
         <p>{post.description}</p>
         <div>
-          <a href={post.links['Apple Music']} className="platform-link">Apple Music</a>
-          <a href={post.links.Spotify} className="platform-link">Spotify</a>
+          <a href={post.links.apple} className="platform-link">Apple Music</a>
+          <a href={post.links.spotify} className="platform-link">Spotify</a>
         </div>
       </div>
     </div>
