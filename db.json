@@ -32,17 +32,6 @@
         "apple": ""
       },
       "highlighted": true
-    },
-    {
-      "title": "123",
-      "description": "123",
-      "cover": "123",
-      "links": {
-        "apple": "123",
-        "spotify": "123"
-      },
-      "highlighted": true,
-      "id": 4
     }
   ]
 }

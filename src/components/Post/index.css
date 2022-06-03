@@ -11,8 +11,14 @@ img {
 .post-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 20px;
   padding: 10px 20px;
+}
+
+.post-content-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .text-wrapper {

@@ -33,9 +33,7 @@ class App extends React.Component {
               },
             body: JSON.stringify(post)
         })
-        .then(console.log)
-        .catch(console.error)
-        .finally(this.fetchData)
+        .then(this.fetchData)
     }
 
     render() {
@@ -46,7 +44,7 @@ class App extends React.Component {
         return (
             <Layout>
                 <Title>Posts</Title>
-                {this.state.items.map(post => <Post post={post} key={post.id} />)}
+                {this.state.items.map(post => <Post post={post} key={post.id} onDelete={this.fetchData} />)}
                 <Form onSubmit={this.handleSubmitForm} />
             </Layout>
         )

@@ -18,6 +18,12 @@
 
 .field {
   height: 30px;
+  outline: none;
+}
+
+.field_error {
+  border-color: red;
+  background-color: mistyrose;
 }
 
 .create-post-button {
