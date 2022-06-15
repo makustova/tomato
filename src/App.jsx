@@ -1,8 +1,8 @@
 import React from 'react';
 import Post from './components/Post';
-import Form from './components/Form';
 import Layout from './components/Layout';
 import Title from './components/Title';
+import FormModal from './components/FormModal';
 
 class App extends React.Component {
     constructor(props) {
@@ -10,10 +10,15 @@ class App extends React.Component {
         this.state = {
             isFetching: true,
             items: [],
+            isFormModalOpen: false,
         }
     }
     componentDidMount() {
         this.fetchData();
+    }
+
+    toggleFormModal = () => {
+        this.setState({isFormModalOpen: !this.state.isFormModalOpen})
     }
 
     fetchData = () => {
@@ -45,7 +50,8 @@ class App extends React.Component {
             <Layout>
                 <Title>Posts</Title>
                 {this.state.items.map(post => <Post post={post} key={post.id} onDelete={this.fetchData} />)}
-                <Form onSubmit={this.handleSubmitForm} />
+                <FormModal isOpen={this.state.isFormModalOpen} onClose={this.toggleFormModal} onSubmit={this.handleSubmitForm} />
+                <button onClick={this.toggleFormModal}>create post</button>
             </Layout>
         )
     }
